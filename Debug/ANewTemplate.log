@@ -1,0 +1,24 @@
+﻿生成启动时间为 2018/5/3 17:47:20。
+     1>项目“D:\SIPrj\ANewTemplate\ANewTemplate\ANewTemplate\ANewTemplate.vcxproj”在节点 2 上(Build 个目标)。
+     1>Build:
+         "C:\Program Files (x86)\Sysprogs\VisualGDB\\VisualGDB.exe" /build "D:\SIPrj\ANewTemplate\ANewTemplate\ANewTemplate\ANewTemplate.vcxproj" "/solution:D:\SIPrj\ANewTemplate\ANewTemplate\ANewTemplate.sln"  "/config:Debug" "/platform:Win32"
+         VisualGDB: Run "C:\SysGCC\arm-eabi\bin\make.exe  CONFIG=Debug -j4" in directory "D:\SIPrj\ANewTemplate\ANewTemplate\ANewTemplate" on local computer
+         C:/SysGCC/arm-eabi/bin/arm-eabi-gcc.exe -ggdb -ffunction-sections -O0   -mcpu=cortex-m3 -mthumb -I. -IC:\Users\lenovo\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32/STM32F1xxxx/STM32F10x_StdPeriph_Driver/inc -IC:\Users\lenovo\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32/STM32F1xxxx/CMSIS_StdPeriph/CM3/CoreSupport -IC:\Users\lenovo\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32/STM32F1xxxx/CMSIS_StdPeriph/CM3/DeviceSupport/ST/STM32F10x -DDEBUG=1 -DARM_MATH_CM3 -DSTM32F103RCTx -Dflash_layout -DSTM32F10X_HD  -c main.c -o Debug/main.o -MD -MF Debug/main.dep
+         C:/SysGCC/arm-eabi/bin/arm-eabi-gcc.exe -ggdb -ffunction-sections -O0   -mcpu=cortex-m3 -mthumb -I. -IC:\Users\lenovo\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32/STM32F1xxxx/STM32F10x_StdPeriph_Driver/inc -IC:\Users\lenovo\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32/STM32F1xxxx/CMSIS_StdPeriph/CM3/CoreSupport -IC:\Users\lenovo\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32/STM32F1xxxx/CMSIS_StdPeriph/CM3/DeviceSupport/ST/STM32F10x -DDEBUG=1 -DARM_MATH_CM3 -DSTM32F103RCTx -Dflash_layout -DSTM32F10X_HD  -c Peripheral.c -o Debug/Peripheral.o -MD -MF Debug/Peripheral.dep
+         C:/SysGCC/arm-eabi/bin/arm-eabi-gcc.exe -ggdb -ffunction-sections -O0   -mcpu=cortex-m3 -mthumb -I. -IC:\Users\lenovo\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32/STM32F1xxxx/STM32F10x_StdPeriph_Driver/inc -IC:\Users\lenovo\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32/STM32F1xxxx/CMSIS_StdPeriph/CM3/CoreSupport -IC:\Users\lenovo\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32/STM32F1xxxx/CMSIS_StdPeriph/CM3/DeviceSupport/ST/STM32F10x -DDEBUG=1 -DARM_MATH_CM3 -DSTM32F103RCTx -Dflash_layout -DSTM32F10X_HD  -c rs485test.c -o Debug/rs485test.o -MD -MF Debug/rs485test.dep
+         rs485test.c: In function 'RS485TestProgram':
+     1>D:\SIPrj\ANewTemplate\ANewTemplate\ANewTemplate\rs485test.c(51,13): warning : implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+            TLength = strlen(TestText);
+                      ^~~~~~
+     1>D:\SIPrj\ANewTemplate\ANewTemplate\ANewTemplate\rs485test.c(51,13): warning : incompatible implicit declaration of built-in function 'strlen'
+         D:\SIPrj\ANewTemplate\ANewTemplate\ANewTemplate\rs485test.c(51,13): note :  include '<string.h>' or provide a declaration of 'strlen'
+         C:/SysGCC/arm-eabi/bin/arm-eabi-g++.exe -o Debug/ANewTemplate.elf -Wl,-gc-sections --specs=nano.specs -u _printf_float --specs=nosys.specs -TC:\Users\lenovo\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32/STM32F1xxxx/LinkerScripts/STM32F103RCTx_flash.lds  -mcpu=cortex-m3 -mthumb   -Wl,--start-group Debug/adctest.o Debug/dactest.o Debug/main.o Debug/Peripheral.o Debug/rs485test.o Debug/sys.o Debug/system_stm32f10x.o Debug/startup_stm32f103xe.o Debug/misc.o Debug/stm32f10x_adc.o Debug/stm32f10x_bkp.o Debug/stm32f10x_can.o Debug/stm32f10x_cec.o Debug/stm32f10x_crc.o Debug/stm32f10x_dac.o Debug/stm32f10x_dbgmcu.o Debug/stm32f10x_dma.o Debug/stm32f10x_exti.o Debug/stm32f10x_flash.o Debug/stm32f10x_fsmc.o Debug/stm32f10x_gpio.o Debug/stm32f10x_i2c.o Debug/stm32f10x_iwdg.o Debug/stm32f10x_pwr.o Debug/stm32f10x_rcc.o Debug/stm32f10x_rtc.o Debug/stm32f10x_sdio.o Debug/stm32f10x_spi.o Debug/stm32f10x_tim.o Debug/stm32f10x_usart.o Debug/stm32f10x_wwdg.o Debug/core_cm3.o     -Wl,--end-group
+         C:/SysGCC/arm-eabi/bin/arm-eabi-objcopy.exe -O binary Debug/ANewTemplate.elf Debug/ANewTemplate.bin
+         ------------------- Memory utilization report -------------------
+         Used FLASH: 22KB out of 256KB (8%)
+         Used RAM: 824 bytes out of 48KB (1%)
+     1>已完成生成项目“D:\SIPrj\ANewTemplate\ANewTemplate\ANewTemplate\ANewTemplate.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.68
